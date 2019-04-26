@@ -10,7 +10,9 @@ let Task = function (name){
 
     // create a method for completing task
     this.complete = function(){
+        this.status = true;
         return ('Completing task -' + this.name);
+
     };
 
     // create method for saving task

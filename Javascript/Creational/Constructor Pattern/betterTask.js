@@ -13,7 +13,7 @@ let BetterTask = function (name){
 // Add methods as prototype to task, so that all objects of task can link to these method without seperate copy for each object
 
 BetterTask.prototype.complete = function(){
-
+    this.status = true;
     return ('Completing Better task -' + this.name);
 
 };
